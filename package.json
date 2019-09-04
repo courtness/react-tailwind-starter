@@ -18,11 +18,11 @@
     "tailwindcss": "^1.1.2"
   },
   "scripts": {
-    "start": "npm-run-all -p start:css start:js",
+    "dev": "npm-run-all -p start:css start:js",
     "build": "npm-run-all build:css build:js",
-    "start:js": "react-scripts start",
+    "dev:js": "react-scripts start",
     "build:js": "react-scripts build",
-    "start:css": "postcss src/styles/vendor/tailwind.src.css -o src/styles/vendor/tailwind.css -w",
+    "dev:css": "postcss src/styles/vendor/tailwind.src.css -o src/styles/vendor/tailwind.css -w",
     "build:css": "postcss src/styles/vendor/tailwind.src.css -o src/styles/vendor/tailwind.css --env production"
   },
   "eslintConfig": {

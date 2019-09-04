@@ -1,0 +1,112 @@
+.test {
+  border: 1px solid red;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.center-relative {
+  position: relative;
+  margin: 0 auto;
+}
+
+.full-absolute {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.full-fixed {
+  @extend .full-absolute;
+
+  position: fixed;
+}
+
+.flex {
+  &-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--aligncenter {
+    align-items: center;
+  }
+
+  &--alignend {
+    align-items: flex-end;
+  }
+
+  &--alignselfstretch {
+    align-self: stretch;
+  }
+
+  &--alignselfend {
+    align-self: flex-end;
+  }
+
+  &--alignselfcenter {
+    align-self: center;
+  }
+
+  &--alignstart {
+    align-items: flex-start;
+  }
+
+  &--alignstretch {
+    align-items: stretch;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--justifybetween {
+    justify-content: space-between;
+  }
+
+  &--justifycenter {
+    justify-content: center;
+  }
+
+  &--justifyend {
+    justify-content: flex-end;
+  }
+
+  &--justifyleft {
+    justify-content: left;
+  }
+
+  &--justifyright {
+    justify-content: right;
+  }
+
+  &--nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.transform-center {
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.gpu {
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform-style: preserve-3d;
+}

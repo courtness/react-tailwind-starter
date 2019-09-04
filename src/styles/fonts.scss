@@ -1,0 +1,63 @@
+////////////
+
+// fonts
+
+// @font-face {
+//   font-family: "font-name";
+//   src: url("../../assets/fonts/font-name/font-name-weight.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+//
+
+@mixin f1 {
+}
+
+.f1 {
+  @include f1;
+}
+
+@mixin f2 {
+}
+
+.f2 {
+  @include f2;
+}
+
+@mixin f3 {
+}
+
+.f3 {
+  @include f3;
+}
+
+@mixin f4 {
+}
+
+.f4 {
+  @include f4;
+}
+
+//
+
+@mixin b1 {
+}
+
+.b1 {
+  @include b1;
+}
+
+@mixin b2 {
+}
+
+.b2 {
+  @include b2;
+}
+
+@mixin b3 {
+}
+
+.b3 {
+  @include b3;
+}
